@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "POV6M2SYtSb127VbkvEhTAf9Dao0lPL0bEJnaVHemrBkGJZvOemFQngGWjcuQ0St9lA0oCStXzK5SIAfgpfNRQ==",
+  "dgSpecHash": "FtGl0RsGOM21yKDO/M5jXcm/kaoQYkqd+t1xp/bG9PdYWbiHuIw7EagAJrNbUsJD9CsVqhq/L3q2ZJhBz3M5oA==",
   "success": true,
   "projectFilePath": "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.Persistence\\Notes.Backend.Persistence.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.5\\microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "C:\\Users\\korob\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
