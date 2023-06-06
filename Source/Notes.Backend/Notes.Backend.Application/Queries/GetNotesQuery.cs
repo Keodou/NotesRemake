@@ -15,8 +15,7 @@ namespace Notes.Backend.Application.Queries
 
         public List<Note> Execute()
         {
-            //return _context.Notes;
-            return null;
+            return _context.Notes.ToList();
         }
     }
 }
