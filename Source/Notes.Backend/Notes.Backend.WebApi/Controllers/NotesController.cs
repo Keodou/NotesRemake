@@ -7,17 +7,17 @@ namespace Notes.Backend.WebApi.Controllers
     [ApiController]
     public class NotesController : ControllerBase
     {
-        private readonly GetNotesQuery _query;
+        private readonly GetNotesQuery _getNotesQuery;
 
         public NotesController(GetNotesQuery query)
         {
-            _query = query;
+            _getNotesQuery = query;
         }
 
         [HttpGet]
-        public ActionResult GetNotes()
+        public async Task<ActionResult> GetNotes()
         {
-            var notes = _query.Execute();
+            var notes = await _getNotesQuery.ExecuteAsync();
             return Ok(notes);
         }
     }

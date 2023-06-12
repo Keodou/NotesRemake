@@ -13,9 +13,9 @@ namespace Notes.Backend.Application.Queries
             _context = context;
         }
 
-        public List<Note> Execute()
+        public async Task<List<Note>> ExecuteAsync()
         {
-            return _context.Notes.ToList();
+            return await _context.Notes.ToListAsync();
         }
     }
 }
