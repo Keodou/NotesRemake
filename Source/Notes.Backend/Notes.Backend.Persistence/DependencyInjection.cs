@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Notes.Backend.Application.Interfaces;
-using Notes.Backend.Application.Queries;
+using Notes.Backend.Application.Notes.Queries;
 
 namespace Notes.Backend.Persistence
 {
@@ -15,7 +15,7 @@ namespace Notes.Backend.Persistence
             services.AddDbContext<NotesDbContext>(options =>
             options.UseSqlServer(connectionString)
             );
-            services.AddTransient<GetNotesQuery>();
+            services.AddTransient<GetNotesQueryHandler>();
             services.AddScoped<INotesDbContext>(provider =>
                 provider.GetService<NotesDbContext>());
             return services;
