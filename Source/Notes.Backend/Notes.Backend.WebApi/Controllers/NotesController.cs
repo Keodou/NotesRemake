@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Notes.Backend.Application.Notes.Queries;
+using Notes.Backend.Application.Services;
 
 namespace Notes.Backend.WebApi.Controllers
 {
@@ -7,18 +8,17 @@ namespace Notes.Backend.WebApi.Controllers
     [ApiController]
     public class NotesController : ControllerBase
     {
-        private readonly GetNotesQueryHandler _getNotesQueryHandler;
+        private readonly INoteService _noteService;
 
-        public NotesController(GetNotesQueryHandler getNotesQueryHandler)
+        public NotesController(INoteService noteService)
         {
-            _getNotesQueryHandler = getNotesQueryHandler;
+            _noteService = noteService;
         }
 
         [HttpGet]
         public async Task<ActionResult> GetNotes()
         {
-            GetNotesQuery query = new();
-            var notes = await _getNotesQueryHandler.ExecuteAsync(query);
+            var notes = await _noteService.GetNotesAsync();
             return Ok(notes);
         }
     }

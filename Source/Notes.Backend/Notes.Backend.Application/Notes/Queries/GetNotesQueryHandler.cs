@@ -17,7 +17,7 @@ namespace Notes.Backend.Application.Notes.Queries
         /// Returns all notes from the database.
         /// </summary>
         /// <param name="query"></param>
-        /// <returns></returns>
+        /// <returns>All notes</returns>
         public async Task<List<Note>> ExecuteAsync(GetNotesQuery query)
         {
             return await _dbContext.Notes.ToListAsync();
