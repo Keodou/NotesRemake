@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Notes.Backend.Application.Notes.Queries;
 using Notes.Backend.Application.Services;
 
 namespace Notes.Backend.WebApi.Controllers
@@ -18,8 +17,8 @@ namespace Notes.Backend.WebApi.Controllers
         [HttpGet]
         public async Task<ActionResult> GetNotes()
         {
-            var notes = await _noteService.GetNotesAsync();
-            return Ok(notes);
+            var notesViewModel = await _noteService.GetNotesAsync();
+            return Ok(notesViewModel);
         }
     }
 }

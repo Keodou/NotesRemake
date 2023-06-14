@@ -1,14 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "s1BKogxWFZXQL8kJ2q+k8DOzY1jEp2BLmMt5///ZlT+H3re97ABoWGd7+QFtIsDPNLDDx7k8vqSSIaaMr9FGHA==",
+  "dgSpecHash": "Noj/uYozgzuYGL8QL3Ipz8USjTmYFjiq/QM1efp88XWl8Mo2WbnJv83dmAZ1aCCHQosUbRAvSdealy4XLcirAQ==",
   "success": true,
   "projectFilePath": "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.WebApi\\Notes.Backend.WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\korob\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\korob\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "C:\\Users\\korob\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\korob\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.0.1\\microsoft.data.sqlclient.sni.runtime.5.0.1.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",

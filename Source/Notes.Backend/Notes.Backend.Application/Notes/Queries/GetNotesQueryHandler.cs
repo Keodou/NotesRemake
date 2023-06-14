@@ -14,7 +14,7 @@ namespace Notes.Backend.Application.Notes.Queries
         }
 
         /// <summary>
-        /// Returns all notes from the database.
+        /// Execute query for returns all notes from the database.
         /// </summary>
         /// <param name="query"></param>
         /// <returns>All notes</returns>

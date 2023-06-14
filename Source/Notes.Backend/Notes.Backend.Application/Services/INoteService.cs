@@ -1,9 +1,9 @@
-﻿using Notes.Backend.Domain.Models;
+﻿using Notes.Backend.Application.Notes.Queries;
 
 namespace Notes.Backend.Application.Services
 {
     public interface INoteService
     {
-        Task<List<Note>> GetNotesAsync();
+        Task<List<GetNotesViewModel>> GetNotesAsync();
     }
 }
