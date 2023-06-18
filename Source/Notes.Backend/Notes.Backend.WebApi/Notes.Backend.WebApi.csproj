@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Notes.Backend.Application\Notes.Backend.Application.csproj" />
+    <ProjectReference Include="..\Notes.Backend.Identity\Notes.Backend.Identity.csproj" />
     <ProjectReference Include="..\Notes.Backend.Persistence\Notes.Backend.Persistence.csproj" />
   </ItemGroup>
 

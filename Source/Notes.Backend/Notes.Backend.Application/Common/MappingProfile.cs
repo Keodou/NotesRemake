@@ -8,7 +8,7 @@ namespace Notes.Backend.Application.Common
     {
         public MappingProfile()
         {
-            CreateMap<Note, GetNotesViewModel>();
+            //CreateMap<Note, GetNotesViewModel>();
         }
     }
 }

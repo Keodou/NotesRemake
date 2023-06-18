@@ -1,12 +1,13 @@
-using Notes.Backend.Application.Common;
 using Notes.Backend.Persistence;
+using Notes.Backend.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
-builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddPersistence(builder.Configuration);
+builder.Services.AddNotesIdentity(builder.Configuration);
+builder.Services.AddAuthentication();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -22,6 +23,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
