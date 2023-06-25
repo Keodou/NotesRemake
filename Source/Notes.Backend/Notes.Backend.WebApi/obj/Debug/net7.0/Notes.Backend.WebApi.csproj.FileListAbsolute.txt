@@ -77,3 +77,6 @@ D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.WebApi\bin\Debug\
 D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.WebApi\bin\Debug\net7.0\Notes.Backend.Domain.pdb
 D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.WebApi\bin\Debug\net7.0\AutoMapper.dll
 D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.WebApi\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.WebApi\bin\Debug\net7.0\Notes.Backend.Identity.dll
+D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.WebApi\bin\Debug\net7.0\Notes.Backend.Identity.pdb
