@@ -24,13 +24,14 @@ namespace Notes.Backend.Application.Services
 
         public async Task<Guid> CreateNoteAsync(string name, string text)
         {
+            CancellationToken cancellationToken = CancellationToken.None;
             CreateNoteCommand command = new()
             {
                 Name = name,
                 Text = text,
             };
 
-            var noteId = await _createNoteCommandHandler.ExecuteAsync(command);
+            var noteId = await _createNoteCommandHandler.ExecuteAsync(command, cancellationToken);
             return noteId;
         }
     }
