@@ -1,4 +1,5 @@
 ﻿using Notes.Backend.Application.Notes.Commands.CreateNote;
+using Notes.Backend.Application.Notes.Commands.DeleteNote;
 using Notes.Backend.Application.Notes.Commands.UpdateNote;
 using Notes.Backend.Application.Notes.Queries;
 using Notes.Backend.Domain.Models;
@@ -10,13 +11,15 @@ namespace Notes.Backend.Application.Services
         private readonly GetNotesQueryHandler _getNotesQueryHandler;
         private readonly CreateNoteCommandHandler _createNoteCommandHandler;
         private readonly UpdateNoteCommandHandler _updateNoteCommandHandler;
+        private readonly DeleteNoteCommandHandler _deleteNoteCommandHandler;
 
         public NoteService(GetNotesQueryHandler getNotesQueryHandler, CreateNoteCommandHandler createNoteCommandHandler,
-            UpdateNoteCommandHandler updateNoteCommandHandler)
+            UpdateNoteCommandHandler updateNoteCommandHandler, DeleteNoteCommandHandler deleteNoteCommandHandler)
         {
             _getNotesQueryHandler = getNotesQueryHandler;
             _createNoteCommandHandler = createNoteCommandHandler;
             _updateNoteCommandHandler = updateNoteCommandHandler;
+            _deleteNoteCommandHandler = deleteNoteCommandHandler;
         }
 
         public async Task<List<Note>> GetNotesAsync()
@@ -49,6 +52,17 @@ namespace Notes.Backend.Application.Services
                 Text = text
             };
             var noteId = await _updateNoteCommandHandler.ExecuteAsync(command, cancellationToken);
+            return noteId;
+        }
+
+        public async Task<Guid> DeleteNoteAsync(Guid id)
+        {
+            CancellationToken cancellationToken = CancellationToken.None;
+            DeleteNoteCommand command = new()
+            {
+                NoteId = id
+            };
+            var noteId = await _deleteNoteCommandHandler.ExecuteAsync(command, cancellationToken);
             return noteId;
         }
     }

@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Notes.Backend.Application.Interfaces;
 using Notes.Backend.Application.Notes.Commands.CreateNote;
+using Notes.Backend.Application.Notes.Commands.DeleteNote;
 using Notes.Backend.Application.Notes.Commands.UpdateNote;
 using Notes.Backend.Application.Notes.Queries;
 using Notes.Backend.Application.Services;
@@ -21,6 +22,7 @@ namespace Notes.Backend.Persistence
             services.AddTransient<GetNotesQueryHandler>();
             services.AddTransient<CreateNoteCommandHandler>();
             services.AddTransient<UpdateNoteCommandHandler>();
+            services.AddTransient<DeleteNoteCommandHandler>();
             services.AddScoped<INoteService, NoteService>();
             services.AddScoped<INotesDbContext>(provider =>
                 provider.GetService<NotesDbContext>());

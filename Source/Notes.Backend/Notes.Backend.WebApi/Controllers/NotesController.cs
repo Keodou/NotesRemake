@@ -37,5 +37,12 @@ namespace Notes.Backend.WebApi.Controllers
             var noteId = await _noteService.UpdateNoteAsync(note.NoteId, note.NoteName, note.NoteText);
             return Ok(noteId);
         }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            var noteId = await _noteService.DeleteNoteAsync(id);
+            return Ok(noteId);
+        }
     }
 }
