@@ -27,8 +27,15 @@ namespace Notes.Backend.WebApi.Controllers
         [HttpPost]
         public async Task<ActionResult<Guid>> Create(NoteDTO note)
         {
-            var NoteId = await _noteService.CreateNoteAsync(note.Name, note.Text);
-            return Ok(NoteId);
+            var noteId = await _noteService.CreateNoteAsync(note.Name, note.Text);
+            return Ok(noteId);
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> Update(UpdateNoteDTO note)
+        {
+            var noteId = await _noteService.UpdateNoteAsync(note.NoteId, note.NoteName, note.NoteText);
+            return Ok(noteId);
         }
     }
 }

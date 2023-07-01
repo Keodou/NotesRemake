@@ -1,4 +1,5 @@
 ﻿using Notes.Backend.Application.Notes.Commands.CreateNote;
+using Notes.Backend.Application.Notes.Commands.UpdateNote;
 using Notes.Backend.Application.Notes.Queries;
 using Notes.Backend.Domain.Models;
 
@@ -6,19 +7,22 @@ namespace Notes.Backend.Application.Services
 {
     public class NoteService : INoteService
     {
-        private readonly GetNotesQueryHandler _queryHandler;
-        private CreateNoteCommandHandler _createNoteCommandHandler;
+        private readonly GetNotesQueryHandler _getNotesQueryHandler;
+        private readonly CreateNoteCommandHandler _createNoteCommandHandler;
+        private readonly UpdateNoteCommandHandler _updateNoteCommandHandler;
 
-        public NoteService(GetNotesQueryHandler queryHandler, CreateNoteCommandHandler createNoteCommandHandler)
+        public NoteService(GetNotesQueryHandler getNotesQueryHandler, CreateNoteCommandHandler createNoteCommandHandler,
+            UpdateNoteCommandHandler updateNoteCommandHandler)
         {
-            _queryHandler = queryHandler;
+            _getNotesQueryHandler = getNotesQueryHandler;
             _createNoteCommandHandler = createNoteCommandHandler;
+            _updateNoteCommandHandler = updateNoteCommandHandler;
         }
 
         public async Task<List<Note>> GetNotesAsync()
         {
             GetNotesQuery getNotesQuery = new();
-            var notes = await _queryHandler.ExecuteAsync(getNotesQuery);
+            var notes = await _getNotesQueryHandler.ExecuteAsync(getNotesQuery);
             return notes;
         }
 
@@ -32,6 +36,19 @@ namespace Notes.Backend.Application.Services
             };
 
             var noteId = await _createNoteCommandHandler.ExecuteAsync(command, cancellationToken);
+            return noteId;
+        }
+
+        public async Task<Guid> UpdateNoteAsync(Guid id, string name, string text)
+        {
+            CancellationToken cancellationToken = CancellationToken.None;
+            UpdateNoteCommand command = new()
+            {
+                Id = id,
+                Name = name,
+                Text = text
+            };
+            var noteId = await _updateNoteCommandHandler.ExecuteAsync(command, cancellationToken);
             return noteId;
         }
     }

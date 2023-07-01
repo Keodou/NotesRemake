@@ -6,5 +6,6 @@ namespace Notes.Backend.Application.Services
     {
         Task<List<Note>> GetNotesAsync();
         Task<Guid> CreateNoteAsync(string name, string text);
+        Task<Guid> UpdateNoteAsync(Guid id, string name, string text);
     }
 }
