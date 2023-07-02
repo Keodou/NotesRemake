@@ -5,7 +5,7 @@ namespace Notes.Backend.Application.Notes.Commands.CreateNote
 {
     public class CreateNoteCommandHandler
     {
-        private INotesDbContext _dbContext;
+        private readonly INotesDbContext _dbContext;
 
         public CreateNoteCommandHandler(INotesDbContext dbContext)
         {

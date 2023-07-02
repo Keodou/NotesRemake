@@ -5,7 +5,7 @@ namespace Notes.Backend.Application.Notes.Commands.UpdateNote
 {
     public class UpdateNoteCommandHandler
     {
-        private INotesDbContext _dbContext;
+        private readonly INotesDbContext _dbContext;
 
         public UpdateNoteCommandHandler(INotesDbContext dbContext)
         {

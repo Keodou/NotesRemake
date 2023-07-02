@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Notes.Backend.Application.Notes.Queries;
+using Notes.Backend.Application.Notes.Commands.CreateNote;
 using Notes.Backend.Domain.Models;
 
 namespace Notes.Backend.Application.Common
@@ -8,7 +8,7 @@ namespace Notes.Backend.Application.Common
     {
         public MappingProfile()
         {
-            //CreateMap<Note, GetNotesViewModel>();
+            CreateMap<Note, CreateNoteCommand>();
         }
     }
 }

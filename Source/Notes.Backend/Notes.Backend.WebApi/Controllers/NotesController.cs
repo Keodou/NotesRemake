@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Notes.Backend.Application.Services;
+using Notes.Backend.Domain.Models;
 using Notes.Backend.WebApi.Models;
 
 namespace Notes.Backend.WebApi.Controllers
@@ -22,6 +23,13 @@ namespace Notes.Backend.WebApi.Controllers
             //string userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             var notes = await _noteService.GetNotesAsync();
             return Ok(notes);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Note>> GetNote(Guid id)
+        {
+            var note = _noteService.GetNoteAsync(id);
+            return Ok(note);
         }
 
         [HttpPost]

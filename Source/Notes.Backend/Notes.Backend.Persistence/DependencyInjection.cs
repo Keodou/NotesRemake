@@ -5,7 +5,8 @@ using Notes.Backend.Application.Interfaces;
 using Notes.Backend.Application.Notes.Commands.CreateNote;
 using Notes.Backend.Application.Notes.Commands.DeleteNote;
 using Notes.Backend.Application.Notes.Commands.UpdateNote;
-using Notes.Backend.Application.Notes.Queries;
+using Notes.Backend.Application.Notes.Queries.GetNote;
+using Notes.Backend.Application.Notes.Queries.GetNotes;
 using Notes.Backend.Application.Services;
 
 namespace Notes.Backend.Persistence
@@ -20,6 +21,7 @@ namespace Notes.Backend.Persistence
             options.UseSqlServer(connectionString)
             );
             services.AddTransient<GetNotesQueryHandler>();
+            services.AddTransient<GetNoteQueryHandler>();
             services.AddTransient<CreateNoteCommandHandler>();
             services.AddTransient<UpdateNoteCommandHandler>();
             services.AddTransient<DeleteNoteCommandHandler>();
