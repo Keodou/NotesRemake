@@ -4,7 +4,6 @@ using Notes.Backend.Application.Notes.Commands.UpdateNote;
 using Notes.Backend.Application.Notes.Queries.GetNote;
 using Notes.Backend.Application.Notes.Queries.GetNotes;
 using Notes.Backend.Domain.Models;
-using System.Runtime.CompilerServices;
 
 namespace Notes.Backend.Application.Services
 {

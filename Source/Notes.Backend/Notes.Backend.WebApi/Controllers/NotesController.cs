@@ -28,7 +28,7 @@ namespace Notes.Backend.WebApi.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Note>> GetNote(Guid id)
         {
-            var note = _noteService.GetNoteAsync(id);
+            var note = await _noteService.GetNoteAsync(id);
             return Ok(note);
         }
 

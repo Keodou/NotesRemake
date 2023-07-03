@@ -12,6 +12,12 @@ namespace Notes.Backend.Application.Notes.Commands.UpdateNote
             _dbContext = dbContext;
         }
 
+        /// <summary>
+        /// Executes a request to update the data
+        /// </summary>
+        /// <param name="command">Request to be executed</param>
+        /// <param name="cancellationToken">Token to cancel the operation</param>
+        /// <returns>ID of the updated object</returns>
         public async Task<Guid> ExecuteAsync(UpdateNoteCommand command, CancellationToken cancellationToken)
         {
             var entity = await _dbContext.Notes.FirstOrDefaultAsync(note => note.Id == command.Id, cancellationToken);

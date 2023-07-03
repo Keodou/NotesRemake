@@ -14,9 +14,9 @@ namespace Notes.Backend.Application.Notes.Queries.GetNotes
         }
 
         /// <summary>
-        /// Execute query for returns all notes from the database.
+        /// Execute query for returns all notes from the database
         /// </summary>
-        /// <param name="query"></param>
+        /// <param name="query">Request to be executed</param>
         /// <returns>All notes</returns>
         public async Task<List<Note>> ExecuteAsync(GetNotesQuery query)
         {
