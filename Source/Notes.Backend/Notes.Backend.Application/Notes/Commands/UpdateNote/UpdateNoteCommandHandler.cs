@@ -22,12 +22,17 @@ namespace Notes.Backend.Application.Notes.Commands.UpdateNote
         {
             var entity = await _dbContext.Notes.FirstOrDefaultAsync(note => note.Id == command.Id, cancellationToken);
 
-            entity.Name = command.Name;
-            entity.Text = command.Text;
-            entity.UpdateDate = DateTime.Now;
+            if (entity != null)
+            {
+                entity.Name = command.Name;
+                entity.Text = command.Text;
+                entity.UpdateDate = DateTime.Now;
 
-            await _dbContext.SaveChangesAsync(cancellationToken);
-            return entity.Id;
+                await _dbContext.SaveChangesAsync(cancellationToken);
+                return entity.Id;
+            }
+
+            return Guid.Empty;
         }
     }
 }

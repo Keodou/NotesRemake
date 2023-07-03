@@ -20,10 +20,15 @@ namespace Notes.Backend.Application.Notes.Commands.DeleteNote
         public async Task<Guid> ExecuteAsync(DeleteNoteCommand command, CancellationToken cancellationToken)
         {
             var entity = await _dbContext.Notes.FindAsync(new object[] { command.NoteId }, cancellationToken);
-            _dbContext.Notes.Remove(entity);
-            await _dbContext.SaveChangesAsync(cancellationToken);
 
-            return entity.Id;
+            if (entity != null)
+            {
+                _dbContext.Notes.Remove(entity);
+                await _dbContext.SaveChangesAsync(cancellationToken);
+                return entity.Id;
+            }
+
+            return Guid.Empty;
         }
     }
 }
