@@ -15,10 +15,10 @@ namespace Notes.Backend.Application.Notes.Queries.GetNote
         }
 
         /// <summary>
-        /// Finds an object by ID from an incoming request
+        /// Finds an object by ID from an incoming request.
         /// </summary>
-        /// <param name="query">Request to be executed</param>
-        /// <returns>The found entity by ID</returns>
+        /// <param name="query">Request to be executed.</param>
+        /// <returns>The found entity by ID.</returns>
         public async Task<Note> ExecuteAsync(GetNoteQuery query)
         {
             var entity = await _dbContext.Notes.FirstOrDefaultAsync(note => note.Id == query.NoteId);

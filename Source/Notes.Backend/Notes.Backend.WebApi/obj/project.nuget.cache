@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BWo+KEdM7jkjSWr0966v7IBo+G/HZd3sYi6AiZaPjE+50CgX4hjr5px+K2+j7vsUilKQRARtZHyfa/HWc5yCeg==",
+  "dgSpecHash": "tNPuqNcn6dQbkPjbkE8cgnJ+l5KVAtkAqWCYwGaMjAAnoRGctHCm92+o7jvKskoUtza3I1Sa9pJayHxa8MNvFA==",
   "success": true,
   "projectFilePath": "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.WebApi\\Notes.Backend.WebApi.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\korob\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\korob\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",

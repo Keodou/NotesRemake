@@ -13,11 +13,11 @@ namespace Notes.Backend.Application.Notes.Commands.CreateNote
         }
 
         /// <summary>
-        /// Executes a request to create the data
+        /// Executes a request to create the data.
         /// </summary>
-        /// <param name="command">Request to be executed</param>
-        /// <param name="cancellationToken">Token to cancel the operation</param>
-        /// <returns>ID of the created object</returns>
+        /// <param name="command">Request to be executed.</param>
+        /// <param name="cancellationToken">Token to cancel the operation.</param>
+        /// <returns>ID of the created object.</returns>
         public async Task<Guid> ExecuteAsync(CreateNoteCommand command, CancellationToken cancellationToken)
         {
             var note = new Note

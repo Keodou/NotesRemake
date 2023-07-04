@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "F7jn4asVo3wbfUUxuo7ejJavuQlpggjrrEoKW/Ty8rDxAqIeSREOPW4HkXh/FNVAChb4MJtcY4X2LntSRSttBA==",
+  "dgSpecHash": "I5YhRu2F4AqcTzAxsY4wG2xmtycUxNHzDU6t4KXLgiFp09xO8SNC1KqQyZ/C0rHG07ZrW2FYZGmBM2NDTRQt3g==",
   "success": true,
   "projectFilePath": "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.Persistence\\Notes.Backend.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\korob\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\korob\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",

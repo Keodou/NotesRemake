@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "WGg9v1HsyvbcDSeKexLWiSAk7/7oN4q+M5mhYP3zztMynAsi/GZZroxyemgcUQN9/2rhQO+dn+bvGQ0kV4/KeA==",
+  "dgSpecHash": "SenScWcG3y4YXRoSDMkWm7SGHApricROe7S7bCbhUT3P/6Q0LKVhhKwvDO7FFvNBO9dZ8V12v0+LObp6LUyriw==",
   "success": true,
   "projectFilePath": "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.Application\\Notes.Backend.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\korob\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\korob\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.5\\microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",
