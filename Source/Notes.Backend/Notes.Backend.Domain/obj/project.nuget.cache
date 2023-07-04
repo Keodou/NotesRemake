@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uZ4ArjPC3iHUuZRK32tFerJAVtPIru22I/Knra3flqLGvHFIGYbOdtgLTQY8BMbYcemXbGfnvun1nRRToCv+9w==",
+  "dgSpecHash": "YzEiHowhtoVIt4I5kETeb2IW6IbpupAXy9MwS0FsdALchjoy82hslvyxYWr7gzmkNoXeJWrGlXaMbrw94yC21g==",
   "success": true,
-  "projectFilePath": "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.Domain\\Notes.Backend.Domain.csproj",
+  "projectFilePath": "D:\\Programming\\CSharp\\NotesRemake\\Source\\Notes.Backend\\Notes.Backend.Domain\\Notes.Backend.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tNPuqNcn6dQbkPjbkE8cgnJ+l5KVAtkAqWCYwGaMjAAnoRGctHCm92+o7jvKskoUtza3I1Sa9pJayHxa8MNvFA==",
+  "dgSpecHash": "ks61wdwnMXLgLd+Ea3x4yF9xM/xhkCUtbnYd1hWNgm7t0UN5D6vD68kGwuXyK49sOnO7Q18iFCbIFZjVG/bBkA==",
   "success": true,
-  "projectFilePath": "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.WebApi\\Notes.Backend.WebApi.csproj",
+  "projectFilePath": "D:\\Programming\\CSharp\\NotesRemake\\Source\\Notes.Backend\\Notes.Backend.WebApi\\Notes.Backend.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\korob\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

@@ -4490,11 +4490,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.WebApi\\Notes.Backend.WebApi.csproj",
+      "projectUniqueName": "D:\\Programming\\CSharp\\NotesRemake\\Source\\Notes.Backend\\Notes.Backend.WebApi\\Notes.Backend.WebApi.csproj",
       "projectName": "Notes.Backend.WebApi",
-      "projectPath": "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.WebApi\\Notes.Backend.WebApi.csproj",
+      "projectPath": "D:\\Programming\\CSharp\\NotesRemake\\Source\\Notes.Backend\\Notes.Backend.WebApi\\Notes.Backend.WebApi.csproj",
       "packagesPath": "C:\\Users\\korob\\.nuget\\packages\\",
-      "outputPath": "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.WebApi\\obj\\",
+      "outputPath": "D:\\Programming\\CSharp\\NotesRemake\\Source\\Notes.Backend\\Notes.Backend.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\korob\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4512,14 +4512,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.Application\\Notes.Backend.Application.csproj": {
-              "projectPath": "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.Application\\Notes.Backend.Application.csproj"
+            "D:\\Programming\\CSharp\\NotesRemake\\Source\\Notes.Backend\\Notes.Backend.Application\\Notes.Backend.Application.csproj": {
+              "projectPath": "D:\\Programming\\CSharp\\NotesRemake\\Source\\Notes.Backend\\Notes.Backend.Application\\Notes.Backend.Application.csproj"
             },
-            "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.Identity\\Notes.Backend.Identity.csproj": {
-              "projectPath": "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.Identity\\Notes.Backend.Identity.csproj"
+            "D:\\Programming\\CSharp\\NotesRemake\\Source\\Notes.Backend\\Notes.Backend.Identity\\Notes.Backend.Identity.csproj": {
+              "projectPath": "D:\\Programming\\CSharp\\NotesRemake\\Source\\Notes.Backend\\Notes.Backend.Identity\\Notes.Backend.Identity.csproj"
             },
-            "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.Persistence\\Notes.Backend.Persistence.csproj": {
-              "projectPath": "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.Persistence\\Notes.Backend.Persistence.csproj"
+            "D:\\Programming\\CSharp\\NotesRemake\\Source\\Notes.Backend\\Notes.Backend.Persistence\\Notes.Backend.Persistence.csproj": {
+              "projectPath": "D:\\Programming\\CSharp\\NotesRemake\\Source\\Notes.Backend\\Notes.Backend.Persistence\\Notes.Backend.Persistence.csproj"
             }
           }
         }

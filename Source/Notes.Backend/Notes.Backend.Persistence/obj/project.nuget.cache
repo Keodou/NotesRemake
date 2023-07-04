@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I5YhRu2F4AqcTzAxsY4wG2xmtycUxNHzDU6t4KXLgiFp09xO8SNC1KqQyZ/C0rHG07ZrW2FYZGmBM2NDTRQt3g==",
+  "dgSpecHash": "CzXSBcAdmfT2lqtj5zr9nptr+qfDjkmObKNpj229cdKp0rpb8O+NKUi1BdEff+k7ih7gfBBRFWhpB7Fc8maFCw==",
   "success": true,
-  "projectFilePath": "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.Persistence\\Notes.Backend.Persistence.csproj",
+  "projectFilePath": "D:\\Programming\\CSharp\\NotesRemake\\Source\\Notes.Backend\\Notes.Backend.Persistence\\Notes.Backend.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\korob\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",

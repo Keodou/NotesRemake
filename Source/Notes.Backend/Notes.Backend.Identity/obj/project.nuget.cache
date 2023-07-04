@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nDPSo81MOgHqxLw7WwrnrxOdXF18wn/sbltOiUEGwzGX81x+18DmwOwicDR3I7fPE85Qwb0heKhjdyEUjy3Vcw==",
+  "dgSpecHash": "YqvYcm2ge/dV62yYYnaA0b/Zn33qQtZqNrLzomWGwQj/5pmFMa6yLAE+Tdfk0f9qMFU89ZrLKWa7nXB/hifWFg==",
   "success": true,
-  "projectFilePath": "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.Identity\\Notes.Backend.Identity.csproj",
+  "projectFilePath": "D:\\Programming\\CSharp\\NotesRemake\\Source\\Notes.Backend\\Notes.Backend.Identity\\Notes.Backend.Identity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

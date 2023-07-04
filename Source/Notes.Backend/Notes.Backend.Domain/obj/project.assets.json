@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.Domain\\Notes.Backend.Domain.csproj",
+      "projectUniqueName": "D:\\Programming\\CSharp\\NotesRemake\\Source\\Notes.Backend\\Notes.Backend.Domain\\Notes.Backend.Domain.csproj",
       "projectName": "Notes.Backend.Domain",
-      "projectPath": "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.Domain\\Notes.Backend.Domain.csproj",
+      "projectPath": "D:\\Programming\\CSharp\\NotesRemake\\Source\\Notes.Backend\\Notes.Backend.Domain\\Notes.Backend.Domain.csproj",
       "packagesPath": "C:\\Users\\korob\\.nuget\\packages\\",
-      "outputPath": "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.Domain\\obj\\",
+      "outputPath": "D:\\Programming\\CSharp\\NotesRemake\\Source\\Notes.Backend\\Notes.Backend.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\korob\\AppData\\Roaming\\NuGet\\NuGet.Config",

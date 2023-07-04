@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.Application\\Notes.Backend.Application.csproj",
+      "projectUniqueName": "D:\\Programming\\CSharp\\NotesRemake\\Source\\Notes.Backend\\Notes.Backend.Application\\Notes.Backend.Application.csproj",
       "projectName": "Notes.Backend.Application",
-      "projectPath": "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.Application\\Notes.Backend.Application.csproj",
+      "projectPath": "D:\\Programming\\CSharp\\NotesRemake\\Source\\Notes.Backend\\Notes.Backend.Application\\Notes.Backend.Application.csproj",
       "packagesPath": "C:\\Users\\korob\\.nuget\\packages\\",
-      "outputPath": "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.Application\\obj\\",
+      "outputPath": "D:\\Programming\\CSharp\\NotesRemake\\Source\\Notes.Backend\\Notes.Backend.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\korob\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -715,8 +715,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.Domain\\Notes.Backend.Domain.csproj": {
-              "projectPath": "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.Domain\\Notes.Backend.Domain.csproj"
+            "D:\\Programming\\CSharp\\NotesRemake\\Source\\Notes.Backend\\Notes.Backend.Domain\\Notes.Backend.Domain.csproj": {
+              "projectPath": "D:\\Programming\\CSharp\\NotesRemake\\Source\\Notes.Backend\\Notes.Backend.Domain\\Notes.Backend.Domain.csproj"
             }
           }
         }

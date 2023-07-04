@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SenScWcG3y4YXRoSDMkWm7SGHApricROe7S7bCbhUT3P/6Q0LKVhhKwvDO7FFvNBO9dZ8V12v0+LObp6LUyriw==",
+  "dgSpecHash": "ZTFHs/vlio19hoaoKGZ8hEkDg1NSldLnVOQrBC8elaLkjZ0zn5DnaXpuVJgwv169Bo+ySqw9xMvQh8lokVUDAg==",
   "success": true,
-  "projectFilePath": "D:\\Programming\\CSharp\\Notes\\Source\\Notes.Backend\\Notes.Backend.Application\\Notes.Backend.Application.csproj",
+  "projectFilePath": "D:\\Programming\\CSharp\\NotesRemake\\Source\\Notes.Backend\\Notes.Backend.Application\\Notes.Backend.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\korob\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
