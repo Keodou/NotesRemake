@@ -1,0 +1,17 @@
+D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.Persistence\bin\Debug\net7.0\Notes.Backend.Persistence.deps.json
+D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.Persistence\bin\Debug\net7.0\Notes.Backend.Persistence.dll
+D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.Persistence\bin\Debug\net7.0\Notes.Backend.Persistence.pdb
+D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.Persistence\bin\Debug\net7.0\Notes.Backend.Application.dll
+D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.Persistence\bin\Debug\net7.0\Notes.Backend.Domain.dll
+D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.Persistence\bin\Debug\net7.0\Notes.Backend.Application.pdb
+D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.Persistence\bin\Debug\net7.0\Notes.Backend.Domain.pdb
+D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.Persistence\obj\Debug\net7.0\Notes.Backend.Persistence.csproj.AssemblyReference.cache
+D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.Persistence\obj\Debug\net7.0\Notes.Backend.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.Persistence\obj\Debug\net7.0\Notes.Backend.Persistence.AssemblyInfoInputs.cache
+D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.Persistence\obj\Debug\net7.0\Notes.Backend.Persistence.AssemblyInfo.cs
+D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.Persistence\obj\Debug\net7.0\Notes.Backend.Persistence.csproj.CoreCompileInputs.cache
+D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.Persistence\obj\Debug\net7.0\Notes.Backend.Persistence.csproj.CopyComplete
+D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.Persistence\obj\Debug\net7.0\Notes.Backend.Persistence.dll
+D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.Persistence\obj\Debug\net7.0\refint\Notes.Backend.Persistence.dll
+D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.Persistence\obj\Debug\net7.0\Notes.Backend.Persistence.pdb
+D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.Persistence\obj\Debug\net7.0\ref\Notes.Backend.Persistence.dll
