@@ -10,3 +10,15 @@ D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.Identity\obj\Debu
 D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.Identity\obj\Debug\net7.0\refint\Notes.Backend.Identity.dll
 D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.Identity\obj\Debug\net7.0\Notes.Backend.Identity.pdb
 D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.Identity\obj\Debug\net7.0\ref\Notes.Backend.Identity.dll
+D:\Programming\CSharp\NotesRemake\Source\Notes.Backend\Notes.Backend.Identity\bin\Debug\net7.0\Notes.Backend.Identity.deps.json
+D:\Programming\CSharp\NotesRemake\Source\Notes.Backend\Notes.Backend.Identity\bin\Debug\net7.0\Notes.Backend.Identity.dll
+D:\Programming\CSharp\NotesRemake\Source\Notes.Backend\Notes.Backend.Identity\bin\Debug\net7.0\Notes.Backend.Identity.pdb
+D:\Programming\CSharp\NotesRemake\Source\Notes.Backend\Notes.Backend.Identity\obj\Debug\net7.0\Notes.Backend.Identity.csproj.AssemblyReference.cache
+D:\Programming\CSharp\NotesRemake\Source\Notes.Backend\Notes.Backend.Identity\obj\Debug\net7.0\Notes.Backend.Identity.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\CSharp\NotesRemake\Source\Notes.Backend\Notes.Backend.Identity\obj\Debug\net7.0\Notes.Backend.Identity.AssemblyInfoInputs.cache
+D:\Programming\CSharp\NotesRemake\Source\Notes.Backend\Notes.Backend.Identity\obj\Debug\net7.0\Notes.Backend.Identity.AssemblyInfo.cs
+D:\Programming\CSharp\NotesRemake\Source\Notes.Backend\Notes.Backend.Identity\obj\Debug\net7.0\Notes.Backend.Identity.csproj.CoreCompileInputs.cache
+D:\Programming\CSharp\NotesRemake\Source\Notes.Backend\Notes.Backend.Identity\obj\Debug\net7.0\Notes.Backend.Identity.dll
+D:\Programming\CSharp\NotesRemake\Source\Notes.Backend\Notes.Backend.Identity\obj\Debug\net7.0\refint\Notes.Backend.Identity.dll
+D:\Programming\CSharp\NotesRemake\Source\Notes.Backend\Notes.Backend.Identity\obj\Debug\net7.0\Notes.Backend.Identity.pdb
+D:\Programming\CSharp\NotesRemake\Source\Notes.Backend\Notes.Backend.Identity\obj\Debug\net7.0\ref\Notes.Backend.Identity.dll

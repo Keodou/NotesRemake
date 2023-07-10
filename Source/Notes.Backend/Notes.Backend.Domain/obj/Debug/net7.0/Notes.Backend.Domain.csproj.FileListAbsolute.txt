@@ -10,3 +10,15 @@ D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.Domain\obj\Debug\
 D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.Domain\obj\Debug\net7.0\refint\Notes.Backend.Domain.dll
 D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.Domain\obj\Debug\net7.0\Notes.Backend.Domain.pdb
 D:\Programming\CSharp\Notes\Source\Notes.Backend\Notes.Backend.Domain\obj\Debug\net7.0\ref\Notes.Backend.Domain.dll
+D:\Programming\CSharp\NotesRemake\Source\Notes.Backend\Notes.Backend.Domain\bin\Debug\net7.0\Notes.Backend.Domain.deps.json
+D:\Programming\CSharp\NotesRemake\Source\Notes.Backend\Notes.Backend.Domain\bin\Debug\net7.0\Notes.Backend.Domain.dll
+D:\Programming\CSharp\NotesRemake\Source\Notes.Backend\Notes.Backend.Domain\bin\Debug\net7.0\Notes.Backend.Domain.pdb
+D:\Programming\CSharp\NotesRemake\Source\Notes.Backend\Notes.Backend.Domain\obj\Debug\net7.0\Notes.Backend.Domain.csproj.AssemblyReference.cache
+D:\Programming\CSharp\NotesRemake\Source\Notes.Backend\Notes.Backend.Domain\obj\Debug\net7.0\Notes.Backend.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\CSharp\NotesRemake\Source\Notes.Backend\Notes.Backend.Domain\obj\Debug\net7.0\Notes.Backend.Domain.AssemblyInfoInputs.cache
+D:\Programming\CSharp\NotesRemake\Source\Notes.Backend\Notes.Backend.Domain\obj\Debug\net7.0\Notes.Backend.Domain.AssemblyInfo.cs
+D:\Programming\CSharp\NotesRemake\Source\Notes.Backend\Notes.Backend.Domain\obj\Debug\net7.0\Notes.Backend.Domain.csproj.CoreCompileInputs.cache
+D:\Programming\CSharp\NotesRemake\Source\Notes.Backend\Notes.Backend.Domain\obj\Debug\net7.0\Notes.Backend.Domain.dll
+D:\Programming\CSharp\NotesRemake\Source\Notes.Backend\Notes.Backend.Domain\obj\Debug\net7.0\refint\Notes.Backend.Domain.dll
+D:\Programming\CSharp\NotesRemake\Source\Notes.Backend\Notes.Backend.Domain\obj\Debug\net7.0\Notes.Backend.Domain.pdb
+D:\Programming\CSharp\NotesRemake\Source\Notes.Backend\Notes.Backend.Domain\obj\Debug\net7.0\ref\Notes.Backend.Domain.dll
