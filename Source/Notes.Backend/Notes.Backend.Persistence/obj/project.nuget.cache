@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CzXSBcAdmfT2lqtj5zr9nptr+qfDjkmObKNpj229cdKp0rpb8O+NKUi1BdEff+k7ih7gfBBRFWhpB7Fc8maFCw==",
+  "dgSpecHash": "Pqhp2sIiHV8S2UILwiHI544qr77fSOh7Hc0VflUP5eBNk4I/1vdNDNtpxt7WNT4qXjGGoWGk+lNjNNWYD8JlVw==",
   "success": true,
   "projectFilePath": "D:\\Programming\\CSharp\\NotesRemake\\Source\\Notes.Backend\\Notes.Backend.Persistence\\Notes.Backend.Persistence.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,8 @@
     "C:\\Users\\korob\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
+    "C:\\Users\\korob\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
+    "C:\\Users\\korob\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",

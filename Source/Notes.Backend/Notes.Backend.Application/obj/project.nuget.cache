@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ZTFHs/vlio19hoaoKGZ8hEkDg1NSldLnVOQrBC8elaLkjZ0zn5DnaXpuVJgwv169Bo+ySqw9xMvQh8lokVUDAg==",
+  "dgSpecHash": "qUAMS3YXLpPkFjR/4kAf5BTJ5BojYg/lIcx6IrMA/c/6/uG2921zV/HsCvYv46XbOYNkztY/bRKonhS83WHDyw==",
   "success": true,
   "projectFilePath": "D:\\Programming\\CSharp\\NotesRemake\\Source\\Notes.Backend\\Notes.Backend.Application\\Notes.Backend.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\korob\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
+    "C:\\Users\\korob\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
+    "C:\\Users\\korob\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
     "C:\\Users\\korob\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.5\\microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",
