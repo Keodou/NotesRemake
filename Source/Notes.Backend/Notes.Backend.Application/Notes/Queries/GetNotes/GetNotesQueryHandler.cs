@@ -1,10 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using MediatR;
+using Microsoft.EntityFrameworkCore;
 using Notes.Backend.Application.Interfaces;
 using Notes.Backend.Domain.Models;
 
 namespace Notes.Backend.Application.Notes.Queries.GetNotes
 {
-    public class GetNotesQueryHandler
+    public class GetNotesQueryHandler : IRequestHandler<GetNotesQuery, List<Note>>
     {
         private readonly INotesDbContext _dbContext;
 
@@ -18,9 +19,9 @@ namespace Notes.Backend.Application.Notes.Queries.GetNotes
         /// </summary>
         /// <param name="query">Request to be executed.</param>
         /// <returns>All notes.</returns>
-        public async Task<List<Note>> ExecuteAsync(GetNotesQuery query)
+        public async Task<List<Note>> Handle(GetNotesQuery query, CancellationToken cancellationToken)
         {
-            return await _dbContext.Notes.ToListAsync();
+            return await _dbContext.Notes.ToListAsync(cancellationToken);
         }
     }
 }

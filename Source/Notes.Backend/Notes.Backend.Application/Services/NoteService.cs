@@ -1,4 +1,5 @@
-﻿using Notes.Backend.Application.Notes.Commands.CreateNote;
+﻿using MediatR;
+using Notes.Backend.Application.Notes.Commands.CreateNote;
 using Notes.Backend.Application.Notes.Commands.DeleteNote;
 using Notes.Backend.Application.Notes.Commands.UpdateNote;
 using Notes.Backend.Application.Notes.Queries.GetNote;
@@ -9,16 +10,18 @@ namespace Notes.Backend.Application.Services
 {
     public class NoteService : INoteService
     {
+        private readonly IMediator _mediator;
         private readonly GetNotesQueryHandler _getNotesQueryHandler;
         private readonly GetNoteQueryHandler _getNoteQueryHandler;
         private readonly CreateNoteCommandHandler _createNoteCommandHandler;
         private readonly UpdateNoteCommandHandler _updateNoteCommandHandler;
         private readonly DeleteNoteCommandHandler _deleteNoteCommandHandler;
 
-        public NoteService(GetNotesQueryHandler getNotesQueryHandler, GetNoteQueryHandler getNoteQueryHandler, 
+        public NoteService(IMediator mediator, GetNotesQueryHandler getNotesQueryHandler, GetNoteQueryHandler getNoteQueryHandler, 
             CreateNoteCommandHandler createNoteCommandHandler, UpdateNoteCommandHandler updateNoteCommandHandler, 
             DeleteNoteCommandHandler deleteNoteCommandHandler)
         {
+            _mediator = mediator;
             _getNotesQueryHandler = getNotesQueryHandler;
             _getNoteQueryHandler = getNoteQueryHandler;
             _createNoteCommandHandler = createNoteCommandHandler;
@@ -28,8 +31,8 @@ namespace Notes.Backend.Application.Services
 
         public async Task<List<Note>> GetNotesAsync()
         {
-            GetNotesQuery getNotesQuery = new();
-            var notes = await _getNotesQueryHandler.ExecuteAsync(getNotesQuery);
+            GetNotesQuery query = new();
+            var notes = await _mediator.Send(query);
             return notes;
         }
 

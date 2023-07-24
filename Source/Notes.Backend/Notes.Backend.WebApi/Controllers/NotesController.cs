@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MediatR;
+using Microsoft.AspNetCore.Mvc;
+using Notes.Backend.Application.Notes.Queries.GetNotes;
 using Notes.Backend.Application.Services;
 using Notes.Backend.Domain.Models;
 using Notes.Backend.WebApi.Models;
@@ -13,10 +15,12 @@ namespace Notes.Backend.WebApi.Controllers
     [ApiController]
     public class NotesController : ControllerBase
     {
+        private readonly IMediator _mediator;
         private readonly INoteService _noteService;
 
-        public NotesController(INoteService noteService)
+        public NotesController(IMediator mediator, INoteService noteService)
         {
+            _mediator = mediator;
             _noteService = noteService;
         }
 
@@ -28,7 +32,9 @@ namespace Notes.Backend.WebApi.Controllers
         public async Task<ActionResult> GetNotes()
         {
             //string userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            var notes = await _noteService.GetNotesAsync();
+            //var notes = await _noteService.GetNotesAsync();
+            //return Ok(notes);
+            var notes = await _mediator.Send(new GetNotesQuery());
             return Ok(notes);
         }
 

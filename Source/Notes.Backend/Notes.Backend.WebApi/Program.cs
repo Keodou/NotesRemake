@@ -1,5 +1,7 @@
 using Notes.Backend.Persistence;
 using Notes.Backend.Identity;
+using Notes.Backend.Application.Notes.Queries.GetNotes;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
