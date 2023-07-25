@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Identity.Client;
 using Notes.Backend.Application.Interfaces;
 using Notes.Backend.Application.Notes.Commands.CreateNote;
 using Notes.Backend.Application.Notes.Commands.DeleteNote;

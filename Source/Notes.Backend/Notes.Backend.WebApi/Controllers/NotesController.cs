@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Notes.Backend.Application.Notes.Queries.GetNote;
 using Notes.Backend.Application.Notes.Queries.GetNotes;
 using Notes.Backend.Application.Services;
 using Notes.Backend.Domain.Models;
@@ -46,7 +47,8 @@ namespace Notes.Backend.WebApi.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Note>> GetNote(Guid id)
         {
-            var note = await _noteService.GetNoteAsync(id);
+            //var note = await _noteService.GetNoteAsync(id);
+            var note = await _mediator.Send(new GetNoteQuery() { NoteId = id });
             return Ok(note);
         }
 

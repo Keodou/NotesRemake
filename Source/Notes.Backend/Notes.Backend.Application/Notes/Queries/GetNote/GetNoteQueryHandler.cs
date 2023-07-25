@@ -1,11 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using MediatR;
+using Microsoft.EntityFrameworkCore;
 using Notes.Backend.Application.Common.Exceptions;
 using Notes.Backend.Application.Interfaces;
 using Notes.Backend.Domain.Models;
 
 namespace Notes.Backend.Application.Notes.Queries.GetNote
 {
-    public class GetNoteQueryHandler
+    public class GetNoteQueryHandler : IRequestHandler<GetNoteQuery, Note>
     {
         private readonly INotesDbContext _dbContext;
 
@@ -19,7 +20,7 @@ namespace Notes.Backend.Application.Notes.Queries.GetNote
         /// </summary>
         /// <param name="query">Request to be executed.</param>
         /// <returns>The found entity by ID.</returns>
-        public async Task<Note> ExecuteAsync(GetNoteQuery query)
+        public async Task<Note> Handle(GetNoteQuery query, CancellationToken token)
         {
             var entity = await _dbContext.Notes.FirstOrDefaultAsync(note => note.Id == query.NoteId);
 

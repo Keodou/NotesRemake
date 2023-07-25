@@ -42,7 +42,8 @@ namespace Notes.Backend.Application.Services
             {
                 NoteId = id
             };
-            var note = await _getNoteQueryHandler.ExecuteAsync(getNoteQuery);
+            //var note = await _getNoteQueryHandler.Handle(getNoteQuery);
+            var note = await _mediator.Send(getNoteQuery);
 
             return note;
         }
