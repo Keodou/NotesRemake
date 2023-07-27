@@ -1,6 +1,8 @@
-﻿namespace Notes.Backend.Application.Notes.Commands.CreateNote
+﻿using MediatR;
+
+namespace Notes.Backend.Application.Notes.Commands.CreateNote
 {
-    public class CreateNoteCommand
+    public class CreateNoteCommand : IRequest<Guid>
     {
         public Guid NoteId { get; set; }
         public string Name { get; set; }

@@ -1,9 +1,10 @@
-﻿using Notes.Backend.Application.Interfaces;
+﻿using MediatR;
+using Notes.Backend.Application.Interfaces;
 using Notes.Backend.Domain.Models;
 
 namespace Notes.Backend.Application.Notes.Commands.CreateNote
 {
-    public class CreateNoteCommandHandler
+    public class CreateNoteCommandHandler : IRequestHandler<CreateNoteCommand, Guid>
     {
         private readonly INotesDbContext _dbContext;
 
@@ -18,7 +19,7 @@ namespace Notes.Backend.Application.Notes.Commands.CreateNote
         /// <param name="command">Request to be executed.</param>
         /// <param name="cancellationToken">Token to cancel the operation.</param>
         /// <returns>ID of the created object.</returns>
-        public async Task<Guid> ExecuteAsync(CreateNoteCommand command, CancellationToken cancellationToken)
+        public async Task<Guid> Handle(CreateNoteCommand command, CancellationToken cancellationToken)
         {
             var note = new Note
             {

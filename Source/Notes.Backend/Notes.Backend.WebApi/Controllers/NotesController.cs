@@ -1,5 +1,8 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Notes.Backend.Application.Notes.Commands.CreateNote;
+using Notes.Backend.Application.Notes.Commands.DeleteNote;
+using Notes.Backend.Application.Notes.Commands.UpdateNote;
 using Notes.Backend.Application.Notes.Queries.GetNote;
 using Notes.Backend.Application.Notes.Queries.GetNotes;
 using Notes.Backend.Application.Services;
@@ -17,12 +20,10 @@ namespace Notes.Backend.WebApi.Controllers
     public class NotesController : ControllerBase
     {
         private readonly IMediator _mediator;
-        private readonly INoteService _noteService;
 
         public NotesController(IMediator mediator, INoteService noteService)
         {
             _mediator = mediator;
-            _noteService = noteService;
         }
 
         /// <summary>
@@ -32,9 +33,6 @@ namespace Notes.Backend.WebApi.Controllers
         [HttpGet]
         public async Task<ActionResult> GetNotes()
         {
-            //string userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            //var notes = await _noteService.GetNotesAsync();
-            //return Ok(notes);
             var notes = await _mediator.Send(new GetNotesQuery());
             return Ok(notes);
         }
@@ -47,7 +45,6 @@ namespace Notes.Backend.WebApi.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Note>> GetNote(Guid id)
         {
-            //var note = await _noteService.GetNoteAsync(id);
             var note = await _mediator.Send(new GetNoteQuery() { NoteId = id });
             return Ok(note);
         }
@@ -60,7 +57,12 @@ namespace Notes.Backend.WebApi.Controllers
         [HttpPost]
         public async Task<ActionResult<Guid>> Create(NoteDTO note)
         {
-            var noteId = await _noteService.CreateNoteAsync(note.Name, note.Text);
+            CreateNoteCommand command = new()
+            {
+                Name = note.Name,
+                Text = note.Text,
+            };
+            var noteId = await _mediator.Send(command);
             return Ok(noteId);
         }
 
@@ -72,7 +74,13 @@ namespace Notes.Backend.WebApi.Controllers
         [HttpPut]
         public async Task<IActionResult> Update(UpdateNoteDTO note)
         {
-            var noteId = await _noteService.UpdateNoteAsync(note.NoteId, note.NoteName, note.NoteText);
+            UpdateNoteCommand command = new()
+            {
+                Id = note.NoteId,
+                Name = note.NoteName,
+                Text = note.NoteText
+            };
+            var noteId = await _mediator.Send(command);
             return Ok(noteId);
         }
 
@@ -84,7 +92,11 @@ namespace Notes.Backend.WebApi.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(Guid id)
         {
-            var noteId = await _noteService.DeleteNoteAsync(id);
+            DeleteNoteCommand command = new()
+            {
+                NoteId = id
+            };
+            var noteId = await _mediator.Send(command);
             return Ok(noteId);
         }
     }

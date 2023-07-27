@@ -1,8 +1,9 @@
-﻿using Notes.Backend.Application.Interfaces;
+﻿using MediatR;
+using Notes.Backend.Application.Interfaces;
 
 namespace Notes.Backend.Application.Notes.Commands.DeleteNote
 {
-    public class DeleteNoteCommandHandler
+    public class DeleteNoteCommandHandler : IRequestHandler<DeleteNoteCommand, Guid>
     {
         private readonly INotesDbContext _dbContext;
 
@@ -17,7 +18,7 @@ namespace Notes.Backend.Application.Notes.Commands.DeleteNote
         /// <param name="command">Request to be executed.</param>
         /// <param name="cancellationToken">Token to cancel the operation.</param>
         /// <returns>ID of the deleted object.</returns>
-        public async Task<Guid> ExecuteAsync(DeleteNoteCommand command, CancellationToken cancellationToken)
+        public async Task<Guid> Handle(DeleteNoteCommand command, CancellationToken cancellationToken)
         {
             var entity = await _dbContext.Notes.FindAsync(new object[] { command.NoteId }, cancellationToken);
 

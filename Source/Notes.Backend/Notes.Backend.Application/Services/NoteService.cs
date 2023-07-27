@@ -56,7 +56,7 @@ namespace Notes.Backend.Application.Services
                 Name = name,
                 Text = text,
             };
-            var noteId = await _createNoteCommandHandler.ExecuteAsync(command, cancellationToken);
+            var noteId = await _mediator.Send(command);
 
             return noteId;
         }
@@ -70,7 +70,7 @@ namespace Notes.Backend.Application.Services
                 Name = name,
                 Text = text
             };
-            var noteId = await _updateNoteCommandHandler.ExecuteAsync(command, cancellationToken);
+            var noteId = await _mediator.Send(command);
 
             return noteId;
         }
@@ -82,7 +82,7 @@ namespace Notes.Backend.Application.Services
             {
                 NoteId = id
             };
-            var noteId = await _deleteNoteCommandHandler.ExecuteAsync(command, cancellationToken);
+            var noteId = await _mediator.Send(command);
 
             return noteId;
         }
