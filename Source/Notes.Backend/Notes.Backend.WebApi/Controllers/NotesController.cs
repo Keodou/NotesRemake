@@ -5,7 +5,6 @@ using Notes.Backend.Application.Notes.Commands.DeleteNote;
 using Notes.Backend.Application.Notes.Commands.UpdateNote;
 using Notes.Backend.Application.Notes.Queries.GetNote;
 using Notes.Backend.Application.Notes.Queries.GetNotes;
-using Notes.Backend.Application.Services;
 using Notes.Backend.Domain.Models;
 using Notes.Backend.WebApi.Models;
 
@@ -21,7 +20,7 @@ namespace Notes.Backend.WebApi.Controllers
     {
         private readonly IMediator _mediator;
 
-        public NotesController(IMediator mediator, INoteService noteService)
+        public NotesController(IMediator mediator)
         {
             _mediator = mediator;
         }
@@ -45,7 +44,11 @@ namespace Notes.Backend.WebApi.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Note>> GetNote(Guid id)
         {
-            var note = await _mediator.Send(new GetNoteQuery() { NoteId = id });
+            GetNoteQuery query = new()
+            {
+                NoteId = id
+            };
+            var note = await _mediator.Send(query);
             return Ok(note);
         }
 
