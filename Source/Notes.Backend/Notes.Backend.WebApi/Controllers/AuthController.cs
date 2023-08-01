@@ -45,7 +45,9 @@ namespace Notes.Backend.WebApi.Controllers
         [HttpPost("Login")]
         public ActionResult<User> Login(UserDTO request)
         {
-            if (user.Login != request.Login)
+            var user  = _dbContext.Users.FirstOrDefault(u => u.Login == request.Login);
+
+            if (user == null)
             {
                 return BadRequest("User not found.");
             }
