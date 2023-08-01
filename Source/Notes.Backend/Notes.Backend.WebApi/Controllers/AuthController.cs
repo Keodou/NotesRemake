@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using Notes.Backend.Application.Interfaces;
 using Notes.Backend.Domain.Models;
 using Notes.Backend.WebApi.Models;
 using System.IdentityModel.Tokens.Jwt;
@@ -14,19 +15,30 @@ namespace Notes.Backend.WebApi.Controllers
     {
         private readonly static User user = new();
         private readonly IConfiguration _configuration;
+        private readonly INotesDbContext _dbContext;
 
-        public AuthController(IConfiguration configuration)
+        public AuthController(IConfiguration configuration, INotesDbContext dbContext)
         {
             _configuration = configuration;
+            _dbContext = dbContext;
         }
 
         [HttpPost("Register")]
-        public ActionResult<User> Register(UserDTO request)
+        public async Task<ActionResult<User>> Register(UserDTO request)
         {
             string passwordHash = BCrypt.Net.BCrypt.HashPassword(request.Password);
+            user.Id = Guid.NewGuid();
             user.Login = request.Login;
             user.PasswordHash = passwordHash;
 
+            if (_dbContext.Users.Select(u => u.Login).Contains(user.Login))
+            {
+                return BadRequest("Such a user already exists.");
+            }
+
+            CancellationToken cancellationToken = CancellationToken.None;
+            await _dbContext.Users.AddAsync(user);
+            await _dbContext.SaveChangesAsync(cancellationToken);
             return Ok(user);
         }
 

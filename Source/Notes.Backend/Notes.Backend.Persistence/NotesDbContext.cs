@@ -12,5 +12,6 @@ namespace Notes.Backend.Persistence
         }
 
         public DbSet<Note> Notes { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }
