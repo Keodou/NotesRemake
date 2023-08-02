@@ -29,7 +29,7 @@ namespace Notes.Backend.WebApi.Controllers
         /// Returns a list of all notes.
         /// </summary>
         /// <returns>Presentation with notes.</returns>
-        [HttpGet]
+        [HttpGet("GetNotes")]
         public async Task<ActionResult> GetNotes()
         {
             var notes = await _mediator.Send(new GetNotesQuery());
@@ -41,7 +41,7 @@ namespace Notes.Backend.WebApi.Controllers
         /// </summary>
         /// <param name="id">ID of the note you are looking for.</param>
         /// <returns>Presentation with note.</returns>
-        [HttpGet("{id}")]
+        [HttpGet("GetNote/{id}")]
         public async Task<ActionResult<Note>> GetNote(Guid id)
         {
             GetNoteQuery query = new()
@@ -57,7 +57,7 @@ namespace Notes.Backend.WebApi.Controllers
         /// </summary>
         /// <param name="note">The completed data model.</param>
         /// <returns>ID of the created note.</returns>
-        [HttpPost]
+        [HttpPost("Create")]
         public async Task<ActionResult<Guid>> Create(NoteDTO note)
         {
             CreateNoteCommand command = new()
@@ -74,7 +74,7 @@ namespace Notes.Backend.WebApi.Controllers
         /// </summary>
         /// <param name="note">The completed data model.</param>
         /// <returns>ID of the updated note.</returns>
-        [HttpPut]
+        [HttpPut("Update")]
         public async Task<IActionResult> Update(UpdateNoteDTO note)
         {
             UpdateNoteCommand command = new()
@@ -92,7 +92,7 @@ namespace Notes.Backend.WebApi.Controllers
         /// </summary>
         /// <param name="id">ID of the note you are looking for.</param>
         /// <returns>ID of the deleted note.</returns>
-        [HttpDelete("{id}")]
+        [HttpDelete("Delete/{id}")]
         public async Task<IActionResult> Delete(Guid id)
         {
             DeleteNoteCommand command = new()
