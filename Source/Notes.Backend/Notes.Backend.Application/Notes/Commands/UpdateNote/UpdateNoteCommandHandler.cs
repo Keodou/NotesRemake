@@ -21,7 +21,9 @@ namespace Notes.Backend.Application.Notes.Commands.UpdateNote
         /// <returns>ID of the updated object.</returns>
         public async Task<Guid> Handle(UpdateNoteCommand command, CancellationToken cancellationToken)
         {
-            var entity = await _dbContext.Notes.FirstOrDefaultAsync(note => note.Id == command.Id, cancellationToken);
+            var entity = await _dbContext.Notes.FirstOrDefaultAsync(note => note.Id == command.Id
+            && note.UserId == command.UserId,
+                cancellationToken);
 
             if (entity != null)
             {

@@ -29,10 +29,10 @@ namespace Notes.Backend.WebApi.Controllers
         /// Returns a list of all notes.
         /// </summary>
         /// <returns>Presentation with notes.</returns>
-        [HttpGet("GetNotes")]
-        public async Task<ActionResult> GetNotes()
+        [HttpGet("GetNotes/{id}")]
+        public async Task<ActionResult> GetNotes(Guid id)
         {
-            var notes = await _mediator.Send(new GetNotesQuery());
+            var notes = await _mediator.Send(new GetNotesQuery() { UserId = id });
             return Ok(notes);
         }
 
@@ -62,6 +62,7 @@ namespace Notes.Backend.WebApi.Controllers
         {
             CreateNoteCommand command = new()
             {
+                UserId = note.UserId,
                 Name = note.Name,
                 Text = note.Text,
             };
@@ -79,6 +80,7 @@ namespace Notes.Backend.WebApi.Controllers
         {
             UpdateNoteCommand command = new()
             {
+                UserId = note.UserId,
                 Id = note.NoteId,
                 Name = note.NoteName,
                 Text = note.NoteText

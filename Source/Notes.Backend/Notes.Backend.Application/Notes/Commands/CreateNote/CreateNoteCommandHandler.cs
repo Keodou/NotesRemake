@@ -23,6 +23,7 @@ namespace Notes.Backend.Application.Notes.Commands.CreateNote
         {
             var note = new Note
             {
+                UserId = command.UserId,
                 Id = Guid.NewGuid(),
                 Name = command.Name,
                 Text = command.Text,

@@ -2,7 +2,8 @@
 {
     public class NoteDTO
     {
-        public string Name { get; set; }
-        public string Text { get; set; }
+        public Guid UserId { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string Text { get; set; } = string.Empty;
     }
 }

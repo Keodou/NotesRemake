@@ -21,7 +21,9 @@ namespace Notes.Backend.Application.Notes.Queries.GetNotes
         /// <returns>All notes.</returns>
         public async Task<List<Note>> Handle(GetNotesQuery query, CancellationToken cancellationToken)
         {
-            return await _dbContext.Notes.ToListAsync(cancellationToken);
+            return await _dbContext.Notes
+                .Where(note => note.UserId == query.UserId)
+                .ToListAsync(cancellationToken);
         }
     }
 }
