@@ -29,10 +29,10 @@ namespace Notes.Backend.WebApi.Controllers
         /// Returns a list of all notes.
         /// </summary>
         /// <returns>Presentation with notes.</returns>
-        [HttpGet("GetNotes/{id}")]
-        public async Task<ActionResult> GetNotes(Guid id)
+        [HttpGet("GetNotes/{userId}")]
+        public async Task<ActionResult> GetNotes(Guid userId)
         {
-            var notes = await _mediator.Send(new GetNotesQuery() { UserId = id });
+            var notes = await _mediator.Send(new GetNotesQuery() { UserId = userId });
             return Ok(notes);
         }
 
