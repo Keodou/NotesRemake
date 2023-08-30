@@ -79,7 +79,7 @@ namespace Notes.Backend.WebApi.Controllers
                 signingCredentials: creds
                 );
 
-            var jwt = new JwtSecurityTokenHandler().WriteToken(token);
+            string jwt = new JwtSecurityTokenHandler().WriteToken(token);
             return jwt;
         }
     }
