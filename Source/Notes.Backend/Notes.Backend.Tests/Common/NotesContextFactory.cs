@@ -9,6 +9,8 @@ namespace Notes.Backend.Tests.Common
         public static Guid UserIdA = Guid.NewGuid();
         public static Guid UserIdB = Guid.NewGuid();
 
+        public static Guid NoteIdForUpdate = Guid.NewGuid();
+
         public static NotesDbContext Create()
         {
             var options = new DbContextOptionsBuilder<NotesDbContext>()
