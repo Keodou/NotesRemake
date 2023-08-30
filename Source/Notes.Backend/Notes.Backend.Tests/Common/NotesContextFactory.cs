@@ -61,6 +61,7 @@ namespace Notes.Backend.Tests.Common
         public static void Destroy(NotesDbContext context)
         {
             context.Database.EnsureDeleted();
+            context.Dispose();
         }
     }
 }
