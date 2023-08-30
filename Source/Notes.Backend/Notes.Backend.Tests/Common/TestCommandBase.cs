@@ -2,7 +2,7 @@
 
 namespace Notes.Backend.Tests.Common
 {
-    public class TestCommandBase : IDisposable
+    public abstract class TestCommandBase : IDisposable
     {
         protected readonly NotesDbContext _context;
 
