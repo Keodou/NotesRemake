@@ -9,7 +9,7 @@ namespace Notes.Backend.Tests.Common
         public static Guid UserIdA = Guid.NewGuid();
         public static Guid UserIdB = Guid.NewGuid();
 
-        public static Guid NoteIdForUpdate = Guid.NewGuid();
+        public static Guid NoteIdForUpdate = Guid.Parse("{3B0A8581-1D22-4EC0-A8FD-DEEC239D1E81}");
 
         public static NotesDbContext Create()
         {

@@ -12,7 +12,7 @@ namespace Notes.Backend.Tests.Notes.Commands
         {
             // Arrange
             var handler = new UpdateNoteCommandHandler(_context);
-            var updateName = "new title";
+            var updateName = "Title1";
 
             // Act
             await handler.Handle(new UpdateNoteCommand
@@ -28,6 +28,7 @@ namespace Notes.Backend.Tests.Notes.Commands
                 note.Name == updateName));
         }
 
+        [Fact]
         public async Task UpdateNoteCommandHandler_FailOnWrongId()
         {
             // Arrange
@@ -45,6 +46,7 @@ namespace Notes.Backend.Tests.Notes.Commands
                     CancellationToken.None));
         }
 
+        [Fact]
         public async Task UpdateNoteCommandHandler_FailOnWrongUserId()
         {
             // Arrange
