@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Notes.Backend.Application.Common.Exceptions;
 using Notes.Backend.Application.Interfaces;
 
 namespace Notes.Backend.Application.Notes.Commands.UpdateNote
@@ -22,20 +23,14 @@ namespace Notes.Backend.Application.Notes.Commands.UpdateNote
         public async Task<Guid> Handle(UpdateNoteCommand command, CancellationToken cancellationToken)
         {
             var entity = await _dbContext.Notes.FirstOrDefaultAsync(note => note.Id == command.Id
-            && note.UserId == command.UserId,
-                cancellationToken);
+                && note.UserId == command.UserId, cancellationToken) ?? throw new NotFoundException("Note no update found.");
 
-            if (entity != null)
-            {
-                entity.Name = command.Name;
-                entity.Text = command.Text;
-                entity.UpdateDate = DateTime.Now;
+            entity.Name = command.Name;
+            entity.Text = command.Text;
+            entity.UpdateDate = DateTime.Now;
 
-                await _dbContext.SaveChangesAsync(cancellationToken);
-                return entity.Id;
-            }
-
-            return Guid.Empty;
+            await _dbContext.SaveChangesAsync(cancellationToken);
+            return entity.Id;
         }
     }
 }

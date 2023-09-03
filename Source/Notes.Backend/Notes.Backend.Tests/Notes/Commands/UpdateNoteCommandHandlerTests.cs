@@ -12,7 +12,7 @@ namespace Notes.Backend.Tests.Notes.Commands
         {
             // Arrange
             var handler = new UpdateNoteCommandHandler(_context);
-            var updateName = "Title1";
+            string updateName = "Title1";
 
             // Act
             await handler.Handle(new UpdateNoteCommand
