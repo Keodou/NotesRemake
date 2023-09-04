@@ -59,7 +59,7 @@ namespace Notes.Backend.Tests.Notes.Commands
                     new UpdateNoteCommand
                     {
                         Id = NotesContextFactory.NoteIdForUpdate,
-                        UserId = NotesContextFactory.UserIdA
+                        UserId = Guid.NewGuid(),
                     },
                     CancellationToken.None));
         }

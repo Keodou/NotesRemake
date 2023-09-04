@@ -2,6 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using Notes.Backend.Application.Common.Exceptions;
 using Notes.Backend.Application.Interfaces;
+using Notes.Backend.Domain.Models;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
+using System;
 
 namespace Notes.Backend.Application.Notes.Commands.UpdateNote
 {
@@ -23,7 +26,12 @@ namespace Notes.Backend.Application.Notes.Commands.UpdateNote
         public async Task<Guid> Handle(UpdateNoteCommand command, CancellationToken cancellationToken)
         {
             var entity = await _dbContext.Notes.FirstOrDefaultAsync(note => note.Id == command.Id
-                && note.UserId == command.UserId, cancellationToken) ?? throw new NotFoundException("Note no update found.");
+                && note.UserId == command.UserId, cancellationToken);
+
+            if (entity == null || entity.UserId != command.UserId)
+            {
+                throw new NotFoundException("Note no update found.");
+            }
 
             entity.Name = command.Name;
             entity.Text = command.Text;
