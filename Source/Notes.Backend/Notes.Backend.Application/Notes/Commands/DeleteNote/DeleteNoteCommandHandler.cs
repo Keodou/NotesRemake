@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Notes.Backend.Application.Common.Exceptions;
 using Notes.Backend.Application.Interfaces;
 
 namespace Notes.Backend.Application.Notes.Commands.DeleteNote
@@ -20,16 +21,11 @@ namespace Notes.Backend.Application.Notes.Commands.DeleteNote
         /// <returns>ID of the deleted object.</returns>
         public async Task<Guid> Handle(DeleteNoteCommand command, CancellationToken cancellationToken)
         {
-            var entity = await _dbContext.Notes.FindAsync(new object[] { command.NoteId }, cancellationToken);
-
-            if (entity != null)
-            {
-                _dbContext.Notes.Remove(entity);
-                await _dbContext.SaveChangesAsync(cancellationToken);
-                return entity.Id;
-            }
-
-            return Guid.Empty;
+            var entity = await _dbContext.Notes.FindAsync(new object[] { command.NoteId }, cancellationToken) 
+                ?? throw new NotFoundException("Note no delete found.");
+            _dbContext.Notes.Remove(entity);
+            await _dbContext.SaveChangesAsync(cancellationToken);
+            return entity.Id;
         }
     }
 }
