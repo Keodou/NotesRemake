@@ -99,7 +99,7 @@ namespace Notes.Backend.WebApi.Controllers
         {
             DeleteNoteCommand command = new()
             {
-                NoteId = id
+                NoteId = id,
             };
             var noteId = await _mediator.Send(command);
             return Ok(noteId);
