@@ -11,6 +11,7 @@ namespace Notes.Backend.Tests.Common
 
         public static Guid NoteIdForUpdate = Guid.Parse("{3B0A8581-1D22-4EC0-A8FD-DEEC239D1E81}");
         public static Guid NoteIdForDelete = Guid.Parse("{6FF51ED1-B4DA-40C1-9C35-E63310E8F6C4}");
+        public static Guid NoteIdForGet = Guid.Parse("{C5EB43C4-E570-409C-88F7-14288FEBC3FE}");
 
         public static NotesDbContext Create()
         {

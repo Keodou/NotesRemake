@@ -39,7 +39,7 @@ namespace Notes.Backend.WebApi.Controllers
                 return BadRequest("Such a user already exists.");
             }
 
-            CancellationToken cancellationToken = default;
+            var cancellationToken = CancellationToken.None;
             await _dbContext.Users.AddAsync(user);
             await _dbContext.SaveChangesAsync(cancellationToken);
             return Ok(user);
